@@ -1,6 +1,6 @@
 export default function Heading({ text, className = "", highlightWidth }) {
   return (
-    <div className="flex justify-center items-center mt-[100px] mb-[60px]">
+    <div className="flex justify-center items-center md:mt-[100px] mt-[80px] md:mb-[60px] mb-[40px]">
       <h2
         className={`font-extrabold md:text-[30px] text-[20px] leading-[100%] uppercase flex justify-center items-center relative inline-block ${className}`}
       >

@@ -34,15 +34,6 @@ body {
 .search-icon {
   @apply w-[41.68px] h-[41.68px] md:w-[50px] md:h-[50px] border border-[#BDC502] rounded-full absolute left-[4px] top-[5px];
 }
-
-.dot {
-  @apply w-[11.85px] h-[11.85px] bg-[#CBEC5E] opacity-40 rounded-full mr-[10px];
-}
-
-.dot.active {
-  @apply opacity-100;
-}
-
 .slider-btn {
   @apply w-[63px] h-[63px] bg-white rounded-full cursor-pointer flex justify-center items-center;
 }
@@ -52,4 +43,51 @@ body {
 }
 .slick-slide {
   margin-right: 15px;
+}
+.slick-dots {
+  bottom: 55px !important;
+}
+.slick-dots li {
+  width: 8px !important;
+  height: 8px !important;
+  margin: 0 2px !important;
+}
+.slick-dots li button {
+  line-height: 8px !important;
+  width: 8px !important;
+  height: 8px !important;
+  padding: 4px !important;
+}
+.slick-dots li.slick-active button:before {
+  color: #d0ff00 !important;
+  opacity: 1 !important;
+}
+.slick-dots li button:before {
+  line-height: 8px !important;
+  width: 8px !important;
+  height: 8px !important;
+  color: #8c9959 !important;
+  opacity: 1 !important;
+}
+
+@media (min-width: 1024px) {
+  .slick-dots {
+    bottom: 115px !important;
+  }
+  .slick-dots li {
+    width: 11.85px !important;
+    height: 11.85px !important;
+  }
+  .slick-dots li button {
+    line-height: 11.85px !important;
+    width: 11.85px !important;
+    height: 11.85px !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 12px !important;
+    line-height: 11.85px !important;
+    width: 11.85px !important;
+    height: 11.85px !important;
+  }
 }

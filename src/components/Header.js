@@ -27,6 +27,9 @@ export default function Header() {
           <button className="px-[18px] py-[5px] sm:px-9 sm:py-3 bg-white text-[#020202] text-[14px] rounded-[39px] border border-solid border-[#fff] font-medium">
             Sign Up
           </button>
+          <button className="w-[34px] h-[34px] bg-white rounded-full flex justify-center items-center">
+            <img src="/images/menu.svg" />
+          </button>
         </div>
       </header>
     </div>

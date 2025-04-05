@@ -11,7 +11,7 @@ export default function InputDropdown() {
   };
 
   return (
-    <div className="absolute right-1 top-1 min-w-[122px] min-h-[52px] border border-[#CDCDCD] bg-[#F0F1F4] rounded-[27.5px] flex items-center justify-center text-[#474747]">
+    <div className="absolute right-1 top-1 md:min-w-[122px] min-w-[88px] md:min-h-[52px] min-h-[41px] border border-[#CDCDCD] bg-[#F0F1F4] rounded-[27.5px] flex items-center justify-center text-[#474747] text-[12px] md:text-[16px]">
       <button
         onClick={() => setDropdownOpen((prev) => !prev)}
         className="flex items-center"
@@ -25,7 +25,7 @@ export default function InputDropdown() {
       </button>
 
       {dropdownOpen && (
-        <div className="absolute min-w-[240px] bg-white rounded-[12px] shadow-[0px_11px_28.3px_0px_#617CAE21] top-[60px] left-[4px]">
+        <div className="absolute min-w-[240px] bg-white rounded-[12px] shadow-[0px_11px_28.3px_0px_#617CAE21] md:top-[60px] top-[52px] md:left-[4px] left-[-149px] z-[1]">
           {["Talent", "Client"].map((type) => (
             <button
               key={type}

@@ -4,7 +4,7 @@ import Discover from "../components/Discover";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-[1440px]">
+    <div className="mx-auto max-w-[1440px] py-[25px]">
       <Header />
       <Hero />
       <Discover />
