@@ -26,6 +26,8 @@ export default function Discover() {
     slidesToScroll: 1,
     arrows: false,
     variableWidth: true,
+    swipe: true, // Enable touch swipe
+    touchMove: true, // Enable touch move for mobile
     responsive: [
       {
         breakpoint: 1280,
@@ -43,8 +45,8 @@ export default function Discover() {
   };
 
   return (
-    <div className="relative pl-[12px]">
-      <Heading text="Discover" highlightWidth="w-[79px]" />
+    <div className="relative pl-[12px] mb-[20px] md:mb-[40px]">
+      <Heading text="Discover" highlightWidth="md:w-[79px] w-[55px]" />
       <Slider ref={sliderRef} {...settings}>
         {data.map((item, index) => (
           <div
@@ -59,8 +61,8 @@ export default function Discover() {
               />
             </div>
 
-            <div className="flex justify-between items-center w-full bg-white rounded-[80px] pl-[15px] pr-[4px] pt-[4px] pb-[4px]">
-              <p className="font-bold text-sm leading-[19px] w-[67%]">
+            <div className="flex justify-between items-center w-full bg-white rounded-[80px] pl-[15px] pr-[4px] pt-[4px] pb-[4px] mt-[14px]">
+              <p className="font-bold text-sm leading-[19px] w-[70%]">
                 {item.title}
               </p>
               <button className="w-12 h-12 flex items-center justify-center bg-[#CBEC5E] rounded-full cursor-pointer">
@@ -70,7 +72,7 @@ export default function Discover() {
           </div>
         ))}
       </Slider>
-      <div className="custom-buttons flex justify-center items-center mt-[20px]">
+      <div className="custom-buttons justify-center items-center mt-[20px] hidden md:flex">
         <button
           onClick={() => sliderRef.current?.slickPrev()}
           className="slider-btn mr-[20px]"
