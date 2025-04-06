@@ -35,7 +35,10 @@ export default function Hero() {
       <div className="relative md:my-[15px] md:min-h-[715px] rounded-[55px] mt-[20px] md:mt-[25px]">
         <Slider ref={sliderRef} {...settings}>
           {data.map((item, index) => (
-            <div className="relative w-full inline-block h-[300px] md:h-[716px]">
+            <div
+              className="relative w-full inline-block h-[300px] md:h-[716px]"
+              key={index}
+            >
               <div
                 className="w-full h-[285px] md:h-[716px] inline-block min-w-[calc(100vw-50px)] rounded-[20px] "
                 key={index}
