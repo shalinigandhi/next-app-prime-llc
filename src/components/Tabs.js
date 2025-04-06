@@ -6,8 +6,8 @@ export default function Tabs() {
   const [activeTab, setActiveTab] = useState("client");
 
   const getTabClassNames = (tab) => {
-    return `flex-1 text-center py-2 px-4 transition-colors duration-300 ease-in-out rounded-[50px] font-medium text-[20px] leading-6 ${
-      activeTab === tab ? "bg-[#CBEC5E] text-[#18470D]" : "bg-white text-black"
+    return `flex-1 text-center py-2 px-4 transition-colors duration-300 ease-in-out rounded-[50px] font-medium text-[20px] leading-6 text-[#18470D] ${
+      activeTab === tab ? "bg-[#CBEC5E]" : "bg-white"
     } focus:outline-none`;
   };
 
