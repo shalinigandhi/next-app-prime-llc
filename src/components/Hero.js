@@ -59,18 +59,18 @@ export default function Hero() {
             </div>
           ))}
         </Slider>
-        <div className="md:absolute md:top-[40px] mt-[25px] md:mt-[0px] md:left-[30px] md:text-[40px] text-[20px] bg-[url('/images/gradient01.png')] bg-no-repeat bg-contain bg-center">
-          <p className="py-[34px] px-[32px] font-extrabold md:leading-[61px] uppercase text-white">
+        <div className="md:absolute md:top-[40px] mt-[25px] md:mt-[0px] md:left-[30px] lg:text-[40px] text-[20px] bg-[url('/images/gradient01.png')] bg-no-repeat bg-contain bg-center">
+          <p className="py-[34px] px-[32px] font-extrabold lg:leading-[61px] uppercase text-white">
             Find the <span className="text-[#CBEC5E]">talent</span> sign up
             <br /> & get The <span className="text-[#CBEC5E]">job</span> done
           </p>
         </div>
-        <div className="md:absolute relative md:top-[120px] md:right-[60px] bg-[url('/images/gradient02.png')] bg-no-repeat bg-contain bg-center">
-          <p className="md:py-[42px] py-[26px] md:px-[48px] px-[58px] md:text-[40px] text-[20px] font-extrabold md:leading-[61px] uppercase text-white">
+        <div className="md:absolute relative md:top-[220px] lg:top-[120px] md:right-[20px] lg:right-[60px] bg-[url('/images/gradient02.png')] bg-no-repeat bg-contain bg-center">
+          <p className="lg:py-[42px] py-[26px] md:px-[48px] px-[58px] lg:text-[40px] text-[20px] font-extrabold lg:leading-[61px] uppercase text-white">
             We`ll <span className="text-[#CBEC5E]">handle</span> that
           </p>
-          <div className="absolute md:right-[42px] right-[39px] bottom-[-30px] flex items-center">
-            <button className="mr-[8px] bg-[#CBEC5E] md:text-[16px] text-[12px] rounded-[40px] py-[12px] px-[30px] text-[#18470D] cursor-pointer">
+          <div className="absolute md:right-[30px] lg:right-[42px] right-[39px] bottom-[-30px] flex items-center">
+            <button className="mr-[8px] bg-[#CBEC5E] lg:text-[16px] text-[12px] rounded-[40px] py-[12px] px-[30px] text-[#18470D] cursor-pointer">
               Sign Up for Contract
             </button>
             <button className="md:w-[51px] md:h-[51px] w-[39px] h-[39px] md:bg-white bg-[#E0E0E0] rounded-full inline-flex items-center justify-center cursor-pointer">
