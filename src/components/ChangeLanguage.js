@@ -23,7 +23,7 @@ export default function ChangeLanguage() {
   return (
     <div className="relative mr-[8px] hidden sm:block">
       <button
-        className="px-4 py-2 text-white flex items-center border border-solid rounded-[39px] border-[#94949480] focus:outline-none cursor-pointer"
+        className="px-4 py-2 text-white flex items-center border border-solid rounded-[39px] border-[#94949480] focus:outline-none cursor-pointer text-[12px] lg:text-[14px]"
         onClick={() => setDropdownOpen(!dropdownOpen)}
       >
         <img
