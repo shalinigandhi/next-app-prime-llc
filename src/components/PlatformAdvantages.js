@@ -13,7 +13,7 @@ export default function PlatformAdvantages() {
           src="/images/business-meeting.svg"
           className="w-full h-[219px] md:w-[520px] md:h-[340px] lg:w-[614px] lg:h-[397px] rounded-[25px] mb-[40px] lg:mb-[0]"
         />
-        <div className="flex-grow lg:ml-[80px] w-full">
+        <div className="flex-grow lg:ml-[80px] w-full md:max-w-[588px] lg:max-w-[100%]">
           <Tabs />
         </div>
       </div>

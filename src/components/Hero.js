@@ -62,25 +62,28 @@ export default function Hero() {
             </div>
           ))}
         </Slider>
-        <div className="md:absolute md:top-[40px] mt-[25px] md:mt-[0px] md:left-[30px] lg:text-[40px] text-[20px] bg-[url('/images/gradient01.png')] bg-no-repeat bg-contain bg-center">
-          <p className="py-[34px] px-[32px] font-extrabold lg:leading-[61px] uppercase text-white">
-            Find the <span className="text-[#CBEC5E]">talent</span> sign up
-            <br /> & get The <span className="text-[#CBEC5E]">job</span> done
-          </p>
-        </div>
-        <div className="md:absolute relative md:top-[220px] lg:top-[120px] md:right-[20px] lg:right-[60px] bg-[url('/images/gradient02.png')] bg-no-repeat bg-contain bg-center">
-          <p className="lg:py-[42px] py-[26px] md:px-[48px] px-[58px] lg:text-[40px] text-[20px] font-extrabold lg:leading-[61px] uppercase text-white">
-            We`ll <span className="text-[#CBEC5E]">handle</span> that
-          </p>
-          <div className="absolute md:right-[30px] lg:right-[42px] right-[39px] bottom-[-30px] flex items-center">
-            <button className="mr-[8px] bg-[#CBEC5E] lg:text-[16px] text-[12px] rounded-[40px] py-[12px] px-[30px] text-[#18470D] cursor-pointer">
-              Sign Up for Contract
-            </button>
-            <button className="md:w-[51px] md:h-[51px] w-[39px] h-[39px] md:bg-white bg-[#E0E0E0] rounded-full inline-flex items-center justify-center cursor-pointer">
-              <img src="/images/play.svg" />
-            </button>
+        <div className="flex flex-col items-center md:block">
+          <div className="md:absolute md:top-[40px] mt-[25px] md:mt-[0px] md:left-[30px] lg:text-[40px] text-[20px] bg-[url('/images/gradient-mobile01.svg')] md:bg-[url('/images/gradient01.png')] bg-no-repeat bg-contain bg-center w-[299px] h-[107px] md:w-auto md:h-auto">
+            <p className="py-[10px] px-[20px] md:py-[34px] md:px-[32px] font-extrabold lg:leading-[61px] uppercase text-white">
+              Find the <span className="text-[#CBEC5E]">talent</span> sign up
+              <br /> & get The <span className="text-[#CBEC5E]">job</span> done
+            </p>
+          </div>
+          <div className="md:absolute relative md:top-[220px] lg:top-[120px] md:right-[20px] lg:right-[60px] bg-[url('/images/gradient-mobile02.svg')] md:bg-[url('/images/gradient02.png')] bg-no-repeat bg-contain bg-center w-[289px] h-[85px] md:w-auto md:h-auto mt-[15px] md:mt-[0]">
+            <p className="py-[14px] px-[42px] lg:py-[42px] md:px-[48px] md:py-[26px] lg:text-[40px] text-[20px] font-extrabold lg:leading-[61px] uppercase text-white">
+              We`ll <span className="text-[#CBEC5E]">handle</span> that
+            </p>
+            <div className="absolute md:right-[30px] lg:right-[42px] right-[25px] bottom-[-30px] flex items-center">
+              <button className="mr-[8px] bg-[#CBEC5E] lg:text-[16px] text-[12px] rounded-[40px] py-[12px] px-[30px] text-[#18470D] cursor-pointer">
+                Sign Up for Contract
+              </button>
+              <button className="md:w-[51px] md:h-[51px] w-[39px] h-[39px] md:bg-white bg-[#E0E0E0] rounded-full inline-flex items-center justify-center cursor-pointer">
+                <img src="/images/play.svg" />
+              </button>
+            </div>
           </div>
         </div>
+
         <div className="md:absolute relative md:bottom-[130px] md:left-1/2 md:transform md:-translate-x-1/2 inline-flex flex-col justify-center items-center mt-[80px] md:mt-[0] w-full md:max-w-[555px]">
           <div className="bg-black flex items-center justify-center search-icon">
             <img src="/images/search.svg" />
