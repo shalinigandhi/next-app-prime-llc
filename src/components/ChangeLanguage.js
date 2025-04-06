@@ -4,7 +4,7 @@ import { useState } from "react";
 const LanguageOption = ({ language, onClick, logo, altText }) => (
   <button
     onClick={() => onClick(language)}
-    className="w-full text-left px-4 py-2 flex items-center cursor-pointer"
+    className={`w-full text-left px-4 py-2 flex items-center cursor-pointer first:border-b first:border-[#4A4A4A]`}
   >
     <img src={logo} alt={altText} className="w-[24px] h-[24px] mr-[10px]" />
     {language === "EN" ? "English" : "Greek"}
