@@ -6,7 +6,7 @@ export default function Tabs() {
   const [activeTab, setActiveTab] = useState("client");
 
   const getTabClassNames = (tab) => {
-    return `flex-1 text-center py-2 px-4 transition-colors duration-300 ease-in-out rounded-[50px] font-medium text-[20px] leading-6 text-[#18470D] ${
+    return `flex-1 text-center py-2 px-4 transition-colors duration-300 ease-in-out rounded-[50px] font-medium text-[18px] md:text-[20px] leading-6 text-[#18470D] ${
       activeTab === tab ? "bg-[#CBEC5E]" : "bg-white"
     } focus:outline-none`;
   };
@@ -19,7 +19,7 @@ export default function Tabs() {
 
   return (
     <div className="flex flex-col items-end">
-      <div className="flex mb-4 bg-white rounded-[50px] w-[297px] h-[56px] p-1 cursor-pointer absolute top-[91px]">
+      <div className="flex mb-4 bg-white rounded-[50px] w-[224px] h-[46px] md:w-[297px] md:h-[56px] p-1 cursor-pointer lg:absolute lg:top-[91px]">
         <button
           onClick={() => setActiveTab("client")}
           className={getTabClassNames("client")}

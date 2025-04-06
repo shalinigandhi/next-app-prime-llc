@@ -46,7 +46,11 @@ export default function Discover() {
 
   return (
     <div className="relative pl-[12px] mb-[20px] md:mb-[40px]">
-      <Heading text="Discover" highlightWidth="md:w-[79px] w-[55px]" />
+      <Heading
+        text="Discover"
+        highlightWidth="md:w-[79px] w-[55px]"
+        right="right-0"
+      />
       <Slider ref={sliderRef} {...settings}>
         {data.map((item, index) => (
           <div
