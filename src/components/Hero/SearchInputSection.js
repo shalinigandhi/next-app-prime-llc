@@ -1,6 +1,7 @@
 import InputDropdown from "../InputDropdown";
 
-export default function SearchInputSection({ searchInputClass }) {
+export default function SearchInputSection() {
+  const searchInputClass = `bg-white rounded-[73px] w-full min-h-[50px] text-[12px] font-medium pl-[60px] outline-none md:min-h-[60px] md:text-[16px] md:pl-[70px] md:min-w-[555px] md:mb-[14px] placeholder-[#737373]`;
   return (
     <div
       className="relative mt-[80px] w-full inline-flex flex-col justify-center items-center

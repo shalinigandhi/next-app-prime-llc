@@ -49,7 +49,7 @@ export default function Discover() {
   const imgClasses = "w-full h-[273px] object-cover rounded-lg";
   const buttonClasses =
     "w-12 h-12 flex items-center justify-center bg-[#CBEC5E] rounded-full cursor-pointer";
-  const textClasses = "font-bold text-sm leading-[19px] w-[70%]";
+  const textClasses = "font-bold text-sm leading-[19px] w-[70%] text-black";
   const wrapperClasses =
     "flex justify-between items-center w-full bg-white rounded-[80px] pl-[15px] pr-[4px] pt-[4px] pb-[4px] mt-[14px]";
   const controlButtonClasses = "slider-btn mr-[20px]";

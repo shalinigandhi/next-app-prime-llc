@@ -1,13 +1,8 @@
 "use client";
 
-import { useRef } from "react";
-import Slider from "react-slick";
 import HeroSlide from "./HeroSlide";
 import GradientTextBlock from "./GradientTextBlock";
 import SearchInputSection from "./SearchInputSection";
-
-// Style constants
-const titleBadgeStyles = `absolute bottom-[7px] left-1/2 transform -translate-x-1/2 bg-white rounded-[61px] font-extrabold uppercase text-black flex justify-center items-center text-[12px] min-w-[207px] max-w-[204px] min-h-[40px] max-h-[40px] md:text-[20px] md:min-w-[355px] md:max-w-[355px] md:min-h-[62px] md:max-h-[62px] md:bottom-[34px] md:shadow-[0px_4px_28.3px_0px_#2B5BB540]`;
 
 const gradientBoxBase = `bg-no-repeat bg-contain bg-center md:w-auto md:h-auto`;
 
@@ -17,50 +12,11 @@ const ctaButton = `mr-[8px] bg-[#CBEC5E] text-[#18470D] text-[12px] rounded-[40p
 
 const playButton = `w-[39px] h-[39px] bg-[#E0E0E0] rounded-full inline-flex items-center justify-center md:w-[51px] md:h-[51px] md:bg-white`;
 
-const searchInput = `bg-white rounded-[73px] w-full min-h-[50px] text-[12px] font-medium pl-[60px] outline-none md:min-h-[60px] md:text-[16px] md:pl-[70px] md:min-w-[555px] md:mb-[14px]`;
-
 export default function Hero() {
-  const sliderRef = useRef(null);
-
-  const data = [
-    { image: "/images/hero-banner.svg", title: "Education and Tutoring" },
-    { image: "/images/discover01.svg", title: "Household Services" },
-    { image: "/images/discover02.svg", title: "Home Maintenance Services" },
-    { image: "/images/discover03.svg", title: "Beauty and Wellness" },
-    { image: "/images/discover05.svg", title: "Event and Entertainment" },
-    { image: "/images/discover06.svg", title: "Marine Services" },
-  ];
-
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    variableWidth: true,
-    swipe: true,
-    touchMove: true,
-    appendDots: (dots) => (
-      <div>
-        <ul className="flex justify-center items-center">{dots}</ul>
-      </div>
-    ),
-  };
-
   return (
     <div className="container">
       <div className="relative mt-[20px] md:mt-[25px] md:my-[15px] md:min-h-[715px] rounded-[55px]">
-        <Slider ref={sliderRef} {...settings}>
-          {data.map((item, index) => (
-            <HeroSlide
-              key={index}
-              image={item.image}
-              title={item.title}
-              titleClass={titleBadgeStyles}
-            />
-          ))}
-        </Slider>
+        <HeroSlide />
 
         <div className="flex flex-col items-center md:block">
           <GradientTextBlock
@@ -95,7 +51,7 @@ export default function Hero() {
           </GradientTextBlock>
         </div>
 
-        <SearchInputSection searchInputClass={searchInput} />
+        <SearchInputSection />
       </div>
     </div>
   );
